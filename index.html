@@ -3,142 +3,136 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seus Aplicativos - Download</title>
+    <title>newchassepartie - Tesouros Digitais</title>
     
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     
-    <!-- Google Fonts: Inter -->
+    <!-- Google Fonts: Pirata One (Títulos) & Merriweather (Corpo) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Pirata+One&display=swap" rel="stylesheet">
     
     <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <style>
-        /* Define a fonte Inter como padrão */
+        /* Define as fontes personalizadas */
+        .font-title {
+            font-family: 'Pirata One', cursive;
+        }
+        .font-body {
+            font-family: 'Merriweather', serif;
+        }
         body {
-            font-family: 'Inter', sans-serif;
+            font-family: 'Merriweather', serif;
             scroll-behavior: smooth;
-        }
-        /* Efeito de gradiente sutil no fundo */
-        .gradient-bg {
-            background-color: #f8fafc;
-            background-image: radial-gradient(circle at 1px 1px, #e2e8f0 1px, transparent 0);
-            background-size: 20px 20px;
-        }
-        .dark .gradient-bg {
-            background-color: #0f172a;
-            background-image: radial-gradient(circle at 1px 1px, #334155 1px, transparent 0);
         }
     </style>
 </head>
-<body class="bg-slate-50 text-slate-800">
+<body class="bg-stone-100 text-stone-800 font-body">
 
     <!-- Cabeçalho -->
-    <header class="bg-white/80 backdrop-blur-lg sticky top-0 z-50 border-b border-slate-200">
+    <header class="bg-stone-100/80 backdrop-blur-lg sticky top-0 z-50 border-b border-stone-300">
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="#" class="text-2xl font-bold text-slate-900">
-                <i class="fas fa-rocket mr-2 text-indigo-600"></i>
-                AppZone
+            <a href="#" class="text-3xl font-title text-stone-900">
+                <i class="fas fa-anchor mr-2 text-teal-800"></i>
+                newchassepartie
             </a>
-            <nav class="hidden md:flex space-x-8">
-                <a href="#apps" class="text-slate-600 hover:text-indigo-600 transition-colors">Aplicativos</a>
-                <a href="#contato" class="text-slate-600 hover:text-indigo-600 transition-colors">Contato</a>
+            <nav class="hidden md:flex space-x-8 font-semibold">
+                <a href="#apps" class="text-stone-700 hover:text-teal-800 transition-colors">Nossos Tesouros</a>
+                <a href="#contato" class="text-stone-700 hover:text-teal-800 transition-colors">Enviar um Pergaminho</a>
             </nav>
-            <a href="#apps" class="hidden md:inline-block bg-indigo-600 text-white font-semibold px-5 py-2 rounded-lg hover:bg-indigo-700 transition-transform hover:scale-105 shadow-sm">
-                Ver Apps
+            <a href="#apps" class="hidden md:inline-block bg-teal-800 text-white font-bold px-5 py-2 rounded-lg hover:bg-teal-900 transition-transform hover:scale-105 shadow-sm">
+                Ver Tesouros
             </a>
-            <button id="mobile-menu-button" class="md:hidden text-2xl">
+            <button id="mobile-menu-button" class="md:hidden text-2xl text-stone-800">
                 <i class="fas fa-bars"></i>
             </button>
         </div>
         <!-- Menu Mobile -->
         <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
-             <a href="#apps" class="block py-2 text-slate-600 hover:text-indigo-600">Aplicativos</a>
-             <a href="#contato" class="block py-2 text-slate-600 hover:text-indigo-600">Contato</a>
+             <a href="#apps" class="block py-2 text-stone-700 hover:text-teal-800 font-semibold">Nossos Tesouros</a>
+             <a href="#contato" class="block py-2 text-stone-700 hover:text-teal-800 font-semibold">Enviar um Pergaminho</a>
         </div>
     </header>
 
     <main>
         <!-- Seção Hero -->
-        <section class="gradient-bg py-20 md:py-32">
+        <section class="py-20 md:py-32">
             <div class="container mx-auto px-6 text-center">
-                <h1 class="text-4xl md:text-6xl font-bold text-slate-900 mb-4 leading-tight">
-                    Soluções Inovadoras na Palma da Sua Mão
+                <h1 class="font-title text-5xl md:text-7xl text-stone-900 mb-6 leading-tight">
+                    Navegue por Mares de Conhecimento Livre
                 </h1>
-                <p class="text-lg md:text-xl text-slate-600 max-w-3xl mx-auto mb-8">
-                    Descubra aplicativos criados para simplificar sua vida digital. Ferramentas poderosas, design intuitivo e tudo ao seu alcance.
+                <p class="text-lg md:text-xl text-stone-700 max-w-3xl mx-auto mb-8 leading-relaxed">
+                    Acreditamos que as melhores ferramentas não deveriam ser trancadas em baús. Em newchassepartie, o mapa do tesouro é para todos. O conhecimento é livre e o software é seu para conquistar. Baixe, use e compartilhe sem amarras.
                 </p>
-                <a href="#apps" class="bg-indigo-600 text-white font-bold py-3 px-8 rounded-lg text-lg hover:bg-indigo-700 transition-transform hover:scale-105 shadow-lg">
-                    <i class="fas fa-download mr-2"></i>
-                    Ver Aplicativos
+                <a href="#apps" class="bg-teal-800 text-white font-bold py-3 px-8 rounded-lg text-lg hover:bg-teal-900 transition-transform hover:scale-105 shadow-lg">
+                    <i class="fas fa-gem mr-2"></i>
+                    Ver Tesouros
                 </a>
             </div>
         </section>
 
-        <!-- Seção de Aplicativos -->
-        <section id="apps" class="py-20 bg-white">
+        <!-- Seção de Tesouros (Aplicativos) -->
+        <section id="apps" class="py-20 bg-stone-200/50">
             <div class="container mx-auto px-6">
                 <div class="text-center mb-12">
-                    <h2 class="text-3xl md:text-4xl font-bold text-slate-900">Nossos Aplicativos</h2>
-                    <p class="text-slate-600 mt-2">Clique para saber mais e fazer o download.</p>
+                    <h2 class="font-title text-4xl md:text-5xl text-stone-900">Nossos Tesouros Digitais</h2>
+                    <p class="text-stone-700 mt-2">Ferramentas forjadas para bravos navegadores.</p>
                 </div>
                 
                 <!-- Grid de Apps -->
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     
-                    <!-- Card do App 1: Gerenciador de Estoque -->
-                    <div class="bg-slate-50 rounded-xl p-8 border border-slate-200 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col">
+                    <!-- Card do App 1: Doubloon Barrel -->
+                    <div class="bg-stone-100 rounded-xl p-8 border border-stone-300 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col">
                         <div class="flex-shrink-0">
-                            <div class="w-16 h-16 bg-indigo-100 text-indigo-600 rounded-lg flex items-center justify-center mb-6">
-                                <!-- Ícone alterado para representar estoque -->
-                                <i class="fas fa-boxes-stacked text-3xl"></i>
+                            <div class="w-16 h-16 bg-teal-200/50 text-teal-800 rounded-lg flex items-center justify-center mb-6">
+                                <i class="fas fa-box-open text-3xl"></i>
                             </div>
-                            <h3 class="text-2xl font-bold text-slate-900 mb-3">Doubloon Barrel</h3>
-                            <p class="text-slate-600 mb-6 flex-grow">
-                                Gerencie seu inventário, controle entradas e saídas e otimize seu estoque com facilidade.
+                            <h3 class="font-title text-3xl text-stone-900 mb-3">Doubloon Barrel</h3>
+                            <p class="text-stone-700 mb-6 flex-grow">
+                                Gerencie seu tesouro como um verdadeiro capitão. Controle entradas, saídas e organize seus bens com a eficiência de um mestre de armas.
                             </p>
                         </div>
-                        <!-- Link de download atualizado -->
-                        <a href="apps/Doubloon Barrel.exe" class="mt-auto w-full text-center bg-indigo-600 text-white font-semibold py-3 px-6 rounded-lg hover:bg-indigo-700 transition-colors">
+                        <a href="apps/Doubloon Barrel.exe" class="mt-auto w-full text-center bg-teal-800 text-white font-bold py-3 px-6 rounded-lg hover:bg-teal-900 transition-colors">
                             Download
-                            <i class="fas fa-arrow-right ml-2"></i>
+                            <i class="fas fa-download ml-2"></i>
                         </a>
                     </div>
 
                     <!-- Card do App 2 -->
-                    <div class="bg-slate-50 rounded-xl p-8 border border-slate-200 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col">
+                    <div class="bg-stone-100 rounded-xl p-8 border border-stone-300 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col">
                          <div class="flex-shrink-0">
-                            <div class="w-16 h-16 bg-emerald-100 text-emerald-600 rounded-lg flex items-center justify-center mb-6">
-                                <i class="fas fa-wallet text-3xl"></i>
+                            <div class="w-16 h-16 bg-teal-200/50 text-teal-800 rounded-lg flex items-center justify-center mb-6">
+                                <i class="fas fa-coins text-3xl"></i>
                             </div>
-                            <h3 class="text-2xl font-bold text-slate-900 mb-3">App Finanças</h3>
-                            <p class="text-slate-600 mb-6 flex-grow">
-                                Controle seus gastos, crie orçamentos e visualize seus investimentos de forma simples e intuitiva.
+                            <h3 class="font-title text-3xl text-stone-900 mb-3">Bússola Financeira</h3>
+                            <p class="text-stone-700 mb-6 flex-grow">
+                                Navegue pelas águas turbulentas das finanças. Mantenha seus dobrões contados e seus investimentos no rumo certo.
                             </p>
                         </div>
-                        <a href="#" class="mt-auto w-full text-center bg-emerald-600 text-white font-semibold py-3 px-6 rounded-lg hover:bg-emerald-700 transition-colors">
+                        <a href="#" class="mt-auto w-full text-center bg-teal-800 text-white font-bold py-3 px-6 rounded-lg hover:bg-teal-900 transition-colors">
                             Download
-                            <i class="fas fa-arrow-right ml-2"></i>
+                            <i class="fas fa-download ml-2"></i>
                         </a>
                     </div>
 
                     <!-- Card do App 3 -->
-                    <div class="bg-slate-50 rounded-xl p-8 border border-slate-200 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col">
+                    <div class="bg-stone-100 rounded-xl p-8 border border-stone-300 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col">
                          <div class="flex-shrink-0">
-                            <div class="w-16 h-16 bg-sky-100 text-sky-600 rounded-lg flex items-center justify-center mb-6">
-                                <i class="fas fa-cloud-sun text-3xl"></i>
+                            <div class="w-16 h-16 bg-teal-200/50 text-teal-800 rounded-lg flex items-center justify-center mb-6">
+                                <i class="fas fa-compass text-3xl"></i>
                             </div>
-                            <h3 class="text-2xl font-bold text-slate-900 mb-3">App Clima</h3>
-                            <p class="text-slate-600 mb-6 flex-grow">
-                                Previsões do tempo precisas, alertas em tempo real e um design limpo para você nunca ser pego de surpresa.
+                            <h3 class="font-title text-3xl text-stone-900 mb-3">Carta Náutica</h3>
+                            <p class="text-stone-700 mb-6 flex-grow">
+                                Nunca perca o norte. Previsões precisas e mapas estelares para garantir que sua jornada seja sempre segura.
                             </p>
                         </div>
-                        <a href="#" class="mt-auto w-full text-center bg-sky-600 text-white font-semibold py-3 px-6 rounded-lg hover:bg-sky-700 transition-colors">
+                        <a href="#" class="mt-auto w-full text-center bg-teal-800 text-white font-bold py-3 px-6 rounded-lg hover:bg-teal-900 transition-colors">
                             Download
-                            <i class="fas fa-arrow-right ml-2"></i>
+                            <i class="fas fa-download ml-2"></i>
                         </a>
                     </div>
                 </div>
@@ -146,29 +140,29 @@
         </section>
 
         <!-- Seção de Contato -->
-        <section id="contato" class="py-20 gradient-bg">
+        <section id="contato" class="py-20">
             <div class="container mx-auto px-6">
                 <div class="text-center mb-12">
-                    <h2 class="text-3xl md:text-4xl font-bold text-slate-900">Entre em Contato</h2>
-                    <p class="text-slate-600 mt-2">Tem alguma dúvida ou sugestão? Envie uma mensagem!</p>
+                    <h2 class="font-title text-4xl md:text-5xl text-stone-900">Enviar um Pergaminho</h2>
+                    <p class="text-stone-700 mt-2">Envie sua mensagem em uma garrafa. Lemos todas que chegam à costa.</p>
                 </div>
                 
-                <div class="max-w-xl mx-auto bg-white p-8 rounded-xl shadow-lg border border-slate-200">
+                <div class="max-w-xl mx-auto bg-stone-100 p-8 rounded-xl shadow-lg border border-stone-300">
                     <form id="contact-form">
                         <div class="mb-4">
-                            <label for="name" class="block text-slate-700 font-semibold mb-2">Nome</label>
-                            <input type="text" id="name" name="name" class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 outline-none transition-shadow" placeholder="Seu nome completo" required>
+                            <label for="name" class="block text-stone-800 font-semibold mb-2">Nome do Navegador</label>
+                            <input type="text" id="name" name="name" class="w-full px-4 py-2 border bg-stone-50 border-stone-400 rounded-lg focus:ring-2 focus:ring-teal-600 focus:border-teal-600 outline-none transition-shadow" placeholder="Seu nome" required>
                         </div>
                         <div class="mb-4">
-                            <label for="email" class="block text-slate-700 font-semibold mb-2">Email</label>
-                            <input type="email" id="email" name="email" class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 outline-none transition-shadow" placeholder="seu.email@exemplo.com" required>
+                            <label for="email" class="block text-stone-800 font-semibold mb-2">Seu Mapa (Email)</label>
+                            <input type="email" id="email" name="email" class="w-full px-4 py-2 border bg-stone-50 border-stone-400 rounded-lg focus:ring-2 focus:ring-teal-600 focus:border-teal-600 outline-none transition-shadow" placeholder="seu.email@exemplo.com" required>
                         </div>
                         <div class="mb-6">
-                            <label for="message" class="block text-slate-700 font-semibold mb-2">Mensagem</label>
-                            <textarea id="message" name="message" rows="5" class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 outline-none transition-shadow" placeholder="Escreva sua mensagem aqui..." required></textarea>
+                            <label for="message" class="block text-stone-800 font-semibold mb-2">Mensagem na Garrafa</label>
+                            <textarea id="message" name="message" rows="5" class="w-full px-4 py-2 border bg-stone-50 border-stone-400 rounded-lg focus:ring-2 focus:ring-teal-600 focus:border-teal-600 outline-none transition-shadow" placeholder="Escreva sua mensagem aqui..." required></textarea>
                         </div>
-                        <button type="submit" class="w-full bg-indigo-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-indigo-700 transition-colors shadow-md">
-                            Enviar Mensagem
+                        <button type="submit" class="w-full bg-teal-800 text-white font-bold py-3 px-6 rounded-lg hover:bg-teal-900 transition-colors shadow-md">
+                            Enviar Pergaminho
                         </button>
                     </form>
                     <div id="form-feedback" class="mt-4 text-center"></div>
@@ -178,15 +172,15 @@
     </main>
 
     <!-- Rodapé -->
-    <footer class="bg-slate-800 text-slate-400 py-12">
+    <footer class="bg-stone-900 text-stone-400 py-12">
         <div class="container mx-auto px-6 text-center">
             <div class="mb-4">
-                <a href="#" class="text-slate-300 hover:text-white mx-3 transition-colors"><i class="fab fa-github fa-lg"></i></a>
-                <a href="#" class="text-slate-300 hover:text-white mx-3 transition-colors"><i class="fab fa-linkedin fa-lg"></i></a>
-                <a href="#" class="text-slate-300 hover:text-white mx-3 transition-colors"><i class="fab fa-twitter fa-lg"></i></a>
+                <a href="#" class="text-stone-400 hover:text-teal-600 mx-3 transition-colors"><i class="fab fa-github fa-lg"></i></a>
+                <a href="#" class="text-stone-400 hover:text-teal-600 mx-3 transition-colors"><i class="fab fa-linkedin fa-lg"></i></a>
+                <a href="#" class="text-stone-400 hover:text-teal-600 mx-3 transition-colors"><i class="fab fa-twitter fa-lg"></i></a>
             </div>
-            <p>&copy; <span id="year"></span> AppZone. Todos os direitos reservados.</p>
-            <p class="text-sm mt-2">Criado com <i class="fas fa-heart text-red-500"></i> para seus projetos.</p>
+            <p>&copy; <span id="year"></span> newchassepartie. Todos os direitos reservados.</p>
+            <p class="text-sm mt-2">Criado com <i class="fas fa-heart text-red-500"></i> para a tripulação.</p>
         </div>
     </footer>
 
