@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>newchassepartie - Tesouros Digitais</title>
-    
+
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    
+
     <!-- Google Fonts: Pirata One (Títulos) & Merriweather (Corpo) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Pirata+One&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Pirata+One&display=swap"
+        rel="stylesheet">
+
     <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
@@ -21,9 +23,11 @@
         .font-title {
             font-family: 'Pirata One', cursive;
         }
+
         .font-body {
             font-family: 'Merriweather', serif;
         }
+
         body {
             font-family: 'Merriweather', serif;
             scroll-behavior: smooth;
@@ -33,25 +37,29 @@
             background-position: center;
             background-attachment: fixed;
         }
-        
+
         /* Estilo para o botão de baú do tesouro */
         .treasure-chest-button .chest-closed {
             display: inline-block;
             transition: opacity 0.3s ease, transform 0.3s ease;
         }
+
         .treasure-chest-button .chest-open {
             display: none;
             transition: opacity 0.3s ease, transform 0.3s ease;
         }
+
         .treasure-chest-button:hover .chest-closed {
             display: none;
         }
+
         .treasure-chest-button:hover .chest-open {
             display: inline-block;
             transform: scale(1.1);
         }
     </style>
 </head>
+
 <body class="bg-stone-900 text-stone-200 font-body">
 
     <!-- Cabeçalho -->
@@ -71,8 +79,9 @@
         </div>
         <!-- Menu Mobile -->
         <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 bg-black/50">
-             <a href="#apps" class="block py-2 text-stone-300 hover:text-teal-400 font-semibold">Nossos Tesouros</a>
-             <a href="#contato" class="block py-2 text-stone-300 hover:text-teal-400 font-semibold">Enviar um Pergaminho</a>
+            <a href="#apps" class="block py-2 text-stone-300 hover:text-teal-400 font-semibold">Nossos Tesouros</a>
+            <a href="#contato" class="block py-2 text-stone-300 hover:text-teal-400 font-semibold">Enviar um
+                Pergaminho</a>
         </div>
     </header>
 
@@ -84,9 +93,12 @@
                     Navegue por Mares de Conhecimento Livre
                 </h1>
                 <p class="text-lg md:text-xl text-stone-300 max-w-3xl mx-auto mb-12 leading-relaxed">
-                    Acreditamos que as melhores ferramentas não deveriam ser trancadas em baús. Em newchassepartie, o mapa do tesouro é para todos. O conhecimento é livre e o software é seu para conquistar. Baixe, use e compartilhe sem amarras.
+                    Acreditamos que as melhores ferramentas não deveriam ser trancadas em baús. Em newchassepartie, o
+                    mapa do tesouro é para todos. O conhecimento é livre e o software é seu para conquistar. Baixe, use
+                    e compartilhe sem amarras.
                 </p>
-                <a href="#apps" title="Ver Tesouros" aria-label="Ver Tesouros" class="treasure-chest-button text-teal-400 hover:text-teal-300 transition-colors">
+                <a href="#apps" title="Ver Tesouros" aria-label="Ver Tesouros"
+                    class="treasure-chest-button text-teal-400 hover:text-teal-300 transition-colors">
                     <i class="fas fa-box chest-closed text-6xl"></i>
                     <i class="fas fa-box-open chest-open text-6xl"></i>
                 </a>
@@ -100,56 +112,67 @@
                     <h2 class="font-title text-4xl md:text-5xl text-stone-100">Nossos Tesouros Digitais</h2>
                     <p class="text-stone-300 mt-2">Ferramentas forjadas para bravos navegadores.</p>
                 </div>
-                
+
                 <!-- Grid de Apps -->
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    
+
                     <!-- Card do App 1: Doubloon Barrel -->
-                    <div class="bg-stone-900/70 backdrop-blur-sm rounded-xl p-8 border border-stone-700 hover:border-teal-600 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col">
+                    <div
+                        class="bg-stone-900/70 backdrop-blur-sm rounded-xl p-8 border border-stone-700 hover:border-teal-600 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col">
                         <div class="flex-shrink-0">
-                            <div class="w-16 h-16 bg-teal-900/50 text-teal-400 rounded-lg flex items-center justify-center mb-6">
-                                <i class="fas fa-box-open text-3xl"></i>
+                            <div class="w-16 h-16 bg-teal-900/50 rounded-lg flex items-center justify-center mb-6">
+                                <img src="public/icone_barril.ico" alt="Ícone do Doubloon Barrel" class="w-10 h-10">
                             </div>
                             <h3 class="font-title text-3xl text-stone-100 mb-3">Doubloon Barrel</h3>
                             <p class="text-stone-300 mb-6 flex-grow">
-                                Gerencie seu tesouro como um verdadeiro capitão. Controle entradas, saídas e organize seus bens com a eficiência de um mestre de armas.
+                                Gerencie seu tesouro como um verdadeiro capitão. Controle entradas, saídas e organize
+                                seus bens com a eficiência de um mestre de armas.
                             </p>
                         </div>
-                        <a href="apps/Doubloon Barrel Portable.zip" class="mt-auto w-full text-center bg-teal-800 text-white font-bold py-3 px-6 rounded-lg hover:bg-teal-700 transition-colors">
+                        <a href="apps/Doubloon Barrel Portable.zip"
+                            class="mt-auto w-full text-center bg-teal-800 text-white font-bold py-3 px-6 rounded-lg hover:bg-teal-700 transition-colors">
                             Download
                             <i class="fas fa-download ml-2"></i>
                         </a>
                     </div>
 
                     <!-- Card do App 2 -->
-                    <div class="bg-stone-900/70 backdrop-blur-sm rounded-xl p-8 border border-stone-700 hover:border-teal-600 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col">
-                         <div class="flex-shrink-0">
-                            <div class="w-16 h-16 bg-teal-900/50 text-teal-400 rounded-lg flex items-center justify-center mb-6">
+                    <div
+                        class="bg-stone-900/70 backdrop-blur-sm rounded-xl p-8 border border-stone-700 hover:border-teal-600 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col">
+                        <div class="flex-shrink-0">
+                            <div
+                                class="w-16 h-16 bg-teal-900/50 text-teal-400 rounded-lg flex items-center justify-center mb-6">
                                 <i class="fas fa-coins text-3xl"></i>
                             </div>
                             <h3 class="font-title text-3xl text-stone-100 mb-3">Bússola Financeira</h3>
                             <p class="text-stone-300 mb-6 flex-grow">
-                                Navegue pelas águas turbulentas das finanças. Mantenha seus dobrões contados e seus investimentos no rumo certo.
+                                Navegue pelas águas turbulentas das finanças. Mantenha seus dobrões contados e seus
+                                investimentos no rumo certo.
                             </p>
                         </div>
-                        <a href="#" class="mt-auto w-full text-center bg-teal-800 text-white font-bold py-3 px-6 rounded-lg hover:bg-teal-700 transition-colors">
+                        <a href="#"
+                            class="mt-auto w-full text-center bg-teal-800 text-white font-bold py-3 px-6 rounded-lg hover:bg-teal-700 transition-colors">
                             Download
                             <i class="fas fa-download ml-2"></i>
                         </a>
                     </div>
 
                     <!-- Card do App 3 -->
-                    <div class="bg-stone-900/70 backdrop-blur-sm rounded-xl p-8 border border-stone-700 hover:border-teal-600 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col">
-                         <div class="flex-shrink-0">
-                            <div class="w-16 h-16 bg-teal-900/50 text-teal-400 rounded-lg flex items-center justify-center mb-6">
+                    <div
+                        class="bg-stone-900/70 backdrop-blur-sm rounded-xl p-8 border border-stone-700 hover:border-teal-600 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col">
+                        <div class="flex-shrink-0">
+                            <div
+                                class="w-16 h-16 bg-teal-900/50 text-teal-400 rounded-lg flex items-center justify-center mb-6">
                                 <i class="fas fa-compass text-3xl"></i>
                             </div>
                             <h3 class="font-title text-3xl text-stone-100 mb-3">Carta Náutica</h3>
                             <p class="text-stone-300 mb-6 flex-grow">
-                                Nunca perca o norte. Previsões precisas e mapas estelares para garantir que sua jornada seja sempre segura.
+                                Nunca perca o norte. Previsões precisas e mapas estelares para garantir que sua jornada
+                                seja sempre segura.
                             </p>
                         </div>
-                        <a href="#" class="mt-auto w-full text-center bg-teal-800 text-white font-bold py-3 px-6 rounded-lg hover:bg-teal-700 transition-colors">
+                        <a href="#"
+                            class="mt-auto w-full text-center bg-teal-800 text-white font-bold py-3 px-6 rounded-lg hover:bg-teal-700 transition-colors">
                             Download
                             <i class="fas fa-download ml-2"></i>
                         </a>
@@ -163,24 +186,34 @@
             <div class="container mx-auto px-6">
                 <div class="text-center mb-12">
                     <h2 class="font-title text-4xl md:text-5xl text-stone-100">Enviar um Pergaminho</h2>
-                    <p class="text-stone-300 mt-2">Envie sua mensagem em uma garrafa. Lemos todas que chegam à costa.</p>
+                    <p class="text-stone-300 mt-2">Envie sua mensagem em uma garrafa. Lemos todas que chegam à costa.
+                    </p>
                 </div>
-                
-                <div class="max-w-xl mx-auto bg-stone-900/70 backdrop-blur-sm p-8 rounded-xl shadow-lg border border-stone-700">
+
+                <div
+                    class="max-w-xl mx-auto bg-stone-900/70 backdrop-blur-sm p-8 rounded-xl shadow-lg border border-stone-700">
                     <form id="contact-form">
                         <div class="mb-4">
                             <label for="name" class="block text-stone-200 font-semibold mb-2">Nome do Navegador</label>
-                            <input type="text" id="name" name="name" class="w-full px-4 py-2 border bg-stone-800/80 text-stone-200 border-stone-600 rounded-lg focus:ring-2 focus:ring-teal-500 focus:border-teal-500 outline-none transition-shadow" placeholder="Seu nome" required>
+                            <input type="text" id="name" name="name"
+                                class="w-full px-4 py-2 border bg-stone-800/80 text-stone-200 border-stone-600 rounded-lg focus:ring-2 focus:ring-teal-500 focus:border-teal-500 outline-none transition-shadow"
+                                placeholder="Seu nome" required>
                         </div>
                         <div class="mb-4">
                             <label for="email" class="block text-stone-200 font-semibold mb-2">Seu Mapa (Email)</label>
-                            <input type="email" id="email" name="email" class="w-full px-4 py-2 border bg-stone-800/80 text-stone-200 border-stone-600 rounded-lg focus:ring-2 focus:ring-teal-500 focus:border-teal-500 outline-none transition-shadow" placeholder="seu.email@exemplo.com" required>
+                            <input type="email" id="email" name="email"
+                                class="w-full px-4 py-2 border bg-stone-800/80 text-stone-200 border-stone-600 rounded-lg focus:ring-2 focus:ring-teal-500 focus:border-teal-500 outline-none transition-shadow"
+                                placeholder="seu.email@exemplo.com" required>
                         </div>
                         <div class="mb-6">
-                            <label for="message" class="block text-stone-200 font-semibold mb-2">Mensagem na Garrafa</label>
-                            <textarea id="message" name="message" rows="5" class="w-full px-4 py-2 border bg-stone-800/80 text-stone-200 border-stone-600 rounded-lg focus:ring-2 focus:ring-teal-500 focus:border-teal-500 outline-none transition-shadow" placeholder="Escreva sua mensagem aqui..." required></textarea>
+                            <label for="message" class="block text-stone-200 font-semibold mb-2">Mensagem na
+                                Garrafa</label>
+                            <textarea id="message" name="message" rows="5"
+                                class="w-full px-4 py-2 border bg-stone-800/80 text-stone-200 border-stone-600 rounded-lg focus:ring-2 focus:ring-teal-500 focus:border-teal-500 outline-none transition-shadow"
+                                placeholder="Escreva sua mensagem aqui..." required></textarea>
                         </div>
-                        <button type="submit" class="w-full bg-teal-800 text-white font-bold py-3 px-6 rounded-lg hover:bg-teal-700 transition-colors shadow-md">
+                        <button type="submit"
+                            class="w-full bg-teal-800 text-white font-bold py-3 px-6 rounded-lg hover:bg-teal-700 transition-colors shadow-md">
                             Enviar Pergaminho
                         </button>
                     </form>
@@ -194,9 +227,12 @@
     <footer class="bg-black/50 text-stone-400 py-12">
         <div class="container mx-auto px-6 text-center">
             <div class="mb-4">
-                <a href="#" class="text-stone-400 hover:text-teal-400 mx-3 transition-colors"><i class="fab fa-github fa-lg"></i></a>
-                <a href="#" class="text-stone-400 hover:text-teal-400 mx-3 transition-colors"><i class="fab fa-linkedin fa-lg"></i></a>
-                <a href="#" class="text-stone-400 hover:text-teal-400 mx-3 transition-colors"><i class="fab fa-twitter fa-lg"></i></a>
+                <a href="#" class="text-stone-400 hover:text-teal-400 mx-3 transition-colors"><i
+                        class="fab fa-github fa-lg"></i></a>
+                <a href="#" class="text-stone-400 hover:text-teal-400 mx-3 transition-colors"><i
+                        class="fab fa-linkedin fa-lg"></i></a>
+                <a href="#" class="text-stone-400 hover:text-teal-400 mx-3 transition-colors"><i
+                        class="fab fa-twitter fa-lg"></i></a>
             </div>
             <p>&copy; <span id="year"></span> newchassepartie. Todos os direitos reservados.</p>
             <p class="text-sm mt-2">Criado com <i class="fas fa-heart text-red-500"></i> para a tripulação.</p>
@@ -214,17 +250,17 @@
 
         // Script para o ano atual no rodapé
         document.getElementById('year').textContent = new Date().getFullYear();
-        
+
         // Script simples para feedback do formulário (não envia email de verdade)
         const contactForm = document.getElementById('contact-form');
         const formFeedback = document.getElementById('form-feedback');
 
-        contactForm.addEventListener('submit', function(e) {
+        contactForm.addEventListener('submit', function (e) {
             e.preventDefault();
-            
+
             formFeedback.textContent = 'Mensagem recebida, marujo!';
             formFeedback.className = 'mt-4 text-center text-teal-400 font-semibold';
-            
+
             contactForm.reset();
 
             setTimeout(() => {
@@ -234,4 +270,5 @@
     </script>
 
 </body>
+
 </html>
